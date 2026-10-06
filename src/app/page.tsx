@@ -69,7 +69,7 @@ export default function Page() {
   return (
     <div className="bg-gradient-to-br from-page-from via-page-via to-page-to min-h-screen text-foreground">
       <Head>
-        <title>Edward LTC | Portfolio</title>
+        <title>Ditamed NDT | Portfolio</title>
         <meta
           name="description"
           content="Personal portfolio website showcasing projects and skills"

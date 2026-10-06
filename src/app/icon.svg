@@ -1,16 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Dark circular background -->
-  <circle cx="50" cy="50" r="45" fill="#1F2937" />
+  <defs>
+    <!-- Neon background -->
+    <radialGradient id="neonBg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#123C3B"/>
+      <stop offset="65%" stop-color="#252B2B"/>
+      <stop offset="100%" stop-color="#252B2B"/>
+    </radialGradient>
 
-  <!-- Left code bracket (green) -->
-  <text x="30" y="50" font-family="monospace" font-size="28" fill="#34d399"
-        dominant-baseline="middle" text-anchor="end">{</text>
+    <!-- Soft teal glow -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
 
-  <!-- Initials (white) -->
-  <text x="50" y="51" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
-        text-anchor="middle" dominant-baseline="middle" fill="#FFFFFF">LTC</text>
+  <!-- Subtle neon glow -->
+  <circle cx="50" cy="50" r="46"
+          fill="#0DB3B3" opacity="0.18"
+          filter="url(#neonGlow)"/>
 
-  <!-- Right code bracket (green) -->
-  <text x="70" y="50" font-family="monospace" font-size="28" fill="#34d399"
-        dominant-baseline="middle" text-anchor="start">}</text>
+  <!-- Main background -->
+  <circle cx="50" cy="50" r="46" fill="url(#neonBg)"/>
+
+  <!-- Left bracket -->
+  <path d="M25 36 L18 36 L18 64 L25 64"
+        fill="none" stroke="#0DB3B3"
+        stroke-width="3" stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Initials -->
+  <text x="50" y="52"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24" font-weight="700"
+        letter-spacing="-1"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        fill="#FFFFFF">NDT</text>
+
+  <!-- Right bracket -->
+  <path d="M75 36 L82 36 L82 64 L75 64"
+        fill="none" stroke="#0DB3B3"
+        stroke-width="3" stroke-linecap="round"
+        stroke-linejoin="round"/>
 </svg>

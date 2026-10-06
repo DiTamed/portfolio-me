@@ -9,14 +9,14 @@ import { projects } from '@/app/config/projects';
  */
 export const portfolioConfig: PortfolioConfig = {
   siteMetadata: {
-    title: 'Edward',
-    description: 'Portfolio website by Edward',
-    author: 'Edward',
+    title: 'Ditamed',
+    description: 'Portfolio website by Ditamed',
+    author: 'Ditamed',
   },
 
   navigation: {
     logo: {
-      text: 'LTC',
+      text: 'NDT',
     },
     links: [
       { href: 'home', label: 'Home' },
@@ -30,52 +30,57 @@ export const portfolioConfig: PortfolioConfig = {
   sections: {
     home: {
       greeting: "Hi, I'm",
-      name: 'Edward LTC',
-      typingTexts: ['Building Backend Systems', 'Solving complex problems'],
+      name: 'Ditamed NDT',
+      typingTexts: ['Front-end & Full-stack Development', 'Solving complex problems'],
       description:
-        'Backend-focused software engineer specialized in building scalable microservices and distributed systems.',
+        'Full-stack developer focused on building user-friendly web applications, robust backend systems, and practical software solutions that turn ideas into reality.',
       scrollIndicatorText: 'Scroll to explore',
     },
 
     about: {
       title: 'About',
       subtitle: 'Me',
+
       bio: [
-        "Hi, I'm a Software Engineering enthusiast living in Việt Nam. I enjoy turning creative ideas into working solutions in my spare time.",
-        "I've been exploring tech for about 4 years, with interests spanning across different development areas. I'm fascinated by intuitive digital experiences that just feel right.",
-        "When I'm not working on code professionally, you'll find me reading about emerging technologies, contributing to open-source projects, and constantly picking up new skills and hobbies.",
+        "Hi, I'm Nguyễn Duy Tâm, a software developer from Vietnam who enjoys building practical applications and turning ideas into functional digital solutions.",
+
+        'My development experience spans frontend and backend technologies, including ReactJS, JavaScript, Python, and FastAPI. I enjoy building user-friendly interfaces, developing APIs, and working with data to solve real-world problems.',
+
+        "Through personal projects and practical development experience, I've continued to strengthen my problem-solving skills, improve my code quality, and learn how to design and structure maintainable applications. I'm always eager to explore new technologies and grow as a Full-stack Developer.",
       ],
+
       details: [
-        { label: 'Location', value: 'Hồ Chí Minh City, Việt Nam' },
-        { label: 'Experience', value: '4+ Years Experience' },
+        { label: 'Location', value: 'Vietnam' },
+        { label: 'Focus', value: 'Full-stack Development' },
       ],
+
       qualities: [
         {
           icon: 'Rocket',
           title: 'Problem Solver',
           description:
-            'I approach complex challenges with analytical thinking and break them down into manageable solutions.',
+            'I enjoy analyzing requirements, breaking down complex problems, and developing practical solutions that address real-world needs.',
           gradient: 'from-emerald-500 to-blue-500',
         },
         {
           icon: 'Code',
-          title: 'Clean Code Advocate',
+          title: 'Frontend Developer',
           description:
-            'I value maintainable, well-structured code that follows best practices and industry standards.',
+            'I build responsive and user-friendly web interfaces using ReactJS, Next.JS, JavaScript, Typescript, and modern frontend development practices.',
           gradient: 'from-blue-500 to-violet-500',
         },
         {
           icon: 'Lightbulb',
-          title: 'System Designer',
+          title: 'Backend Developer',
           description:
-            'I architect backend solutions with a focus on clean design, reliability, and long-term scalability.',
+            'I develop backend APIs and application logic using Python, FastAPI, Node.js, and JavaScript, focusing on clean code structure, reliable data processing, and maintainable backend solutions.',
           gradient: 'from-purple-500 to-indigo-500',
         },
         {
           icon: 'BarChart3',
-          title: 'Scalable Architect',
+          title: 'Practical Solution Builder',
           description:
-            'I design backend systems and microservices that are reliable, scalable, and easy to maintain.',
+            'I enjoy building useful software solutions, from weather data APIs to Excel reporting and reconciliation systems that help streamline workflows.',
           gradient: 'from-indigo-500 to-cyan-500',
         },
       ],
@@ -89,7 +94,7 @@ export const portfolioConfig: PortfolioConfig = {
       projects: projects,
       viewMoreButton: {
         label: 'View More Projects',
-        url: 'https://github.com/EdwardLTC',
+        url: 'https://github.com/DiTamed',
       },
     },
 

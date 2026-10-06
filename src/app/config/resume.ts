@@ -2,32 +2,32 @@ import type { ResumeContent } from '@/app/types/resume';
 
 export const resumeContent: ResumeContent = {
   header: {
-    firstName: 'LÊ THÀNH',
-    lastName: 'CÔNG',
-    title: 'Junior Lead Backend Engineer',
-    tagline: '// InsurTech · FinTech',
+    firstName: 'NGUYỄN DUY',
+    lastName: 'TÂM',
+    title: 'Full-stack Development ',
+    tagline: '// Web & Mobile Applications',
     contacts: [
-      { kind: 'plain', text: 'Hồ Chí Minh City, Việt Nam' },
-      { kind: 'plain', text: '0794628973' },
+      { kind: 'plain', text: 'Ho Chi Minh City, Vietnam' },
+      { kind: 'plain', text: '0369231746' },
       {
         kind: 'link',
-        text: 'lethanhcong06062003@gmail.com',
-        href: 'mailto:lethanhcong06062003@gmail.com',
+        text: 'ndtam04@gmail.com',
+        href: 'mailto:ndtam04@gmail.com',
       },
       {
         kind: 'link',
-        text: 'edwardltc.github.io/profile',
-        href: 'https://edwardltc.github.io/profile/',
+        text: 'github.com/DiTamed',
+        href: 'https://github.com/DiTamed',
       },
     ],
   },
 
   sectionTitles: {
-    careerPath: "Where I'm headed",
-    experience: 'Experience',
+    careerPath: 'Career Objective',
+    experience: 'Work Experience',
     projects: 'Projects',
     education: 'Education',
-    skills: 'Skills',
+    skills: 'Technical Skills',
     languages: 'Languages',
     awards: 'Awards',
   },
@@ -35,52 +35,30 @@ export const resumeContent: ResumeContent = {
   careerPath: {
     lines: [
       [
-        { kind: 'strong', text: 'Next five years — target position' },
+        { kind: 'text', text: 'I am a ' },
+        { kind: 'strong', text: 'Full-stack Developer' },
         {
           kind: 'text',
-          text: ': I aim to grow from ',
-        },
-        { kind: 'strong', text: 'Junior Lead Backend Engineer' },
-        {
-          kind: 'text',
-          text: ' into a ',
-        },
-        { kind: 'strong', text: 'Senior Backend / Backend Tech Lead' },
-        {
-          kind: 'text',
-          text: ' role (IC-first) where I own a major product surface or shared platform area—features, reliability, cost, and safe evolution across services—not just tickets.',
+          text: ' with hands-on experience in frontend development, backend API development, and application integration. I enjoy building practical web and mobile applications that address real user and business needs.',
         },
       ],
       [
-        { kind: 'text', text: 'I want my seat at the table to be ' },
-        { kind: 'strong', text: 'trusted technical authority' },
+        { kind: 'text', text: 'My technical experience includes ' },
+        {
+          kind: 'strong',
+          text: 'React, React Native, Next.js, TypeScript, JavaScript, Python, and FastAPI',
+        },
         {
           kind: 'text',
-          text: ': shaping backend roadmaps with product, setting review standards for APIs and data changes, and leading the hardest integration and payout-style work.',
+          text: ', along with database integration, third-party services, and deployment workflows.',
         },
       ],
       [
-        { kind: 'text', text: 'I plan to widen influence to ' },
-        { kind: 'strong', text: 'cross-team architecture' },
+        { kind: 'text', text: 'I aim to keep improving my ' },
+        { kind: 'strong', text: 'full-stack engineering skills' },
         {
           kind: 'text',
-          text: '—RFCs, migration plans, and incident learnings that raise the bar beyond my immediate squad, while staying accountable for production outcomes.',
-        },
-      ],
-      [
-        { kind: 'text', text: 'I expect to keep ' },
-        { kind: 'strong', text: 'hands-on coding' },
-        {
-          kind: 'text',
-          text: ' as a default, with more time on design reviews, mentoring mid-level engineers, and hiring support—without drifting into a purely meeting-only role.',
-        },
-      ],
-      [
-        { kind: 'text', text: 'I see myself anchored in ' },
-        { kind: 'strong', text: 'high-trust domains' },
-        {
-          kind: 'text',
-          text: ' (finance/insurance-style or similar): correctness, auditability, and partner ecosystems stay central to how I am measured, not only velocity.',
+          text: ' by writing maintainable code, collaborating effectively, and delivering reliable, user-focused software.',
         },
       ],
     ],
@@ -88,322 +66,301 @@ export const resumeContent: ResumeContent = {
 
   experience: [
     {
-      company: 'Fissolution',
-      dateRange: 'Jul 2023 — Present',
-      role: 'Junior Lead Backend Engineer',
+      company: 'Van Thanh Medical Investment Joint Stock Company',
+      dateRange: 'Dec 2025 — May 2026',
+      role: 'Front-end Developer',
       summary:
-        'InsurTech & FinTech platform — modular monolith (microservice-ready) backend for insurance/finance product suite built on 4 NestJS + Prisma services.',
+        'Worked on digital transformation initiatives for the healthcare sector, including clinic website customization and patient-facing digital services.',
       bullets: [
         [
-          { kind: 'text', text: 'Integrated ' },
-          { kind: 'strong', text: 'insurance provider APIs' },
-          { kind: 'text', text: ' and ' },
-          { kind: 'strong', text: 'Payment Gateway' },
-          { kind: 'text', text: ' across multiple product lines.' },
+          { kind: 'text', text: 'Customized and maintained clinic websites on the ' },
+          { kind: 'strong', text: 'Haravan platform' },
+          { kind: 'text', text: ' using HTML, CSS, JavaScript, and Liquid.' },
         ],
         [
-          { kind: 'text', text: 'Designed and implemented ' },
-          { kind: 'strong', text: 'end-to-end order + contract lifecycle' },
-          { kind: 'text', text: ' management.' },
-        ],
-        [
-          { kind: 'text', text: 'Standardized ' },
-          { kind: 'strong', text: 'API contracts' },
           {
             kind: 'text',
-            text: ' between multiple insurance and financial service providers for interoperability.',
+            text: 'Developed and maintained website components and pages for clinic services, branch information, and customer contact.',
           },
         ],
         [
-          { kind: 'text', text: 'Built ' },
-          { kind: 'strong', text: 'affiliate & partner integrations' },
-          { kind: 'text', text: ' including tracking, orders, and disbursement items.' },
+          { kind: 'text', text: 'Contributed to an independently developed ' },
+          { kind: 'strong', text: 'Zalo Mini App' },
+          { kind: 'text', text: ' to improve patient engagement and access to clinic services.' },
         ],
         [
-          { kind: 'text', text: 'Automated insurance creation workflows, ' },
-          { kind: 'strong', text: 'reducing manual operations by 40%' },
-          { kind: 'text', text: '.' },
-        ],
-        [
-          { kind: 'text', text: 'Built ' },
-          { kind: 'strong', text: 'payments + payouts flows' },
           {
             kind: 'text',
-            text: ': withdrawals, bank/payment info handling, and reconciliation reporting.',
+            text: 'Integrated appointment and consultation forms with Google Sheets and automated notifications through workflow tools.',
           },
         ],
         [
-          { kind: 'text', text: 'Integrated ' },
-          { kind: 'strong', text: 'AWS IaaS' },
-          { kind: 'text', text: ' (EC2, RDS, S3) for cloud infrastructure.' },
-        ],
-        [
-          { kind: 'text', text: 'Delivered ' },
-          { kind: 'strong', text: 'admin / corp / provider portal' },
-          { kind: 'text', text: ' backend APIs as separate services.' },
-        ],
-        [
-          { kind: 'text', text: 'Built ' },
-          { kind: 'strong', text: 'audit logging & change history' },
           {
             kind: 'text',
-            text: ' (Audit / AuditEvent / AuditEntry / AuditReadLog) for compliance.',
+            text: 'Worked on website SEO configuration, redirects, metadata, and performance improvements.',
           },
-        ],
-        [
-          { kind: 'text', text: 'Built a ' },
-          { kind: 'strong', text: 'multi-tenant SaaS platform' },
-          {
-            kind: 'text',
-            text: ' enabling partners to lease and operate isolated instances of the system.',
-          },
-        ],
-        [
-          { kind: 'text', text: 'Designed and implemented an ' },
-          { kind: 'strong', text: 'affiliate tracking & commission system' },
-          {
-            kind: 'text',
-            text: ' for publishers and partner campaigns.',
-          },
-        ],
-        [
-          { kind: 'text', text: 'Introduced ' },
-          { kind: 'strong', text: 'dynamic encrypted ' },
-          { kind: 'text', text: ' base on timestamp for public API requests to ' },
-          { kind: 'strong', text: 'prevent replay attacks ' },
-          { kind: 'text', text: 'and ensure request integrity.' },
         ],
       ],
-      tags: ['NestJS', 'Prisma', 'PostgreSQL', 'AWS EC2', 'RDS', 'S3', 'TypeScript'],
+      tags: ['HTML', 'CSS', 'JavaScript', 'Liquid', 'Haravan', 'Zalo Mini App', 'SEO'],
     },
     {
-      company: 'FPT Education',
-      dateRange: 'Mar 2023 — Mar 2025',
-      role: 'Backend Freelancer',
+      company: 'Theta Business Solution Co., Ltd.',
+      dateRange: 'Aug 2025 — Nov 2025',
+      role: 'Front-end Developer',
+      summary:
+        'Delivered frontend solutions for client projects, including interactive web applications and custom Zalo Mini Apps.',
       bullets: [
         [
-          { kind: 'strong', text: 'MyFPS' },
+          { kind: 'text', text: 'Developed interactive web application interfaces using ' },
+          { kind: 'strong', text: 'ReactJS' },
+          { kind: 'text', text: ' and related frontend technologies.' },
+        ],
+        [
+          { kind: 'text', text: 'Built and customized ' },
+          { kind: 'strong', text: 'Zalo Mini Apps' },
+          { kind: 'text', text: ' to support client and business requirements.' },
+        ],
+        [
           {
             kind: 'text',
-            text: " — App for parents to monitor children's learning progress.",
+            text: 'Improved user experience and interface behavior to align with functional requirements and business goals.',
           },
         ],
         [
-          { kind: 'strong', text: 'MyFPL' },
           {
             kind: 'text',
-            text: ' — App for students to register for school services and view grades.',
+            text: 'Worked on tailored software solutions for different clients and use cases.',
           },
-        ],
-        [
-          { kind: 'strong', text: 'FPL Save Electricity' },
-          { kind: 'text', text: ' — App for IoT device management app for school environments.' },
         ],
       ],
-      tags: ['NestJS', 'Node.js', 'PostgreSQL', 'Socket.IO'],
+      tags: ['ReactJS', 'JavaScript', 'Frontend Development', 'Zalo Mini Apps'],
     },
   ],
 
   projects: [
     {
-      title: 'E-Commerce Microservice System',
-      linkLabel: 'github.com/EdwardLTC/e-commerce-microservice',
-      linkHref: 'https://github.com/EdwardLTC/e-commerce-microservice',
+      title: 'Duong Nguyen Huynh — Company Website',
+      subtitle: [
+        { kind: 'text', text: 'Company website · ' },
+        { kind: 'em', text: 'Full-stack development' },
+      ],
+      linkLabel: 'duongnguyenhuynh.com',
+      linkHref: 'https://duongnguyenhuynh.com/',
       bullets: [
         [
-          { kind: 'text', text: 'Designed a ' },
-          { kind: 'strong', text: 'polyglot microservice' },
-          { kind: 'text', text: ' system spanning 4 languages/frameworks.' },
+          { kind: 'text', text: 'Developed the website frontend using ' },
+          { kind: 'strong', text: 'Next.js and TypeScript' },
+          { kind: 'text', text: '.' },
         ],
         [
-          { kind: 'text', text: 'Distributed transactions via ' },
-          { kind: 'strong', text: 'Saga pattern' },
-          { kind: 'text', text: ' (choreography) for order processing.' },
+          { kind: 'text', text: 'Implemented backend functionality and database access using ' },
+          { kind: 'strong', text: 'Prisma and Supabase' },
+          { kind: 'text', text: '.' },
         ],
         [
-          { kind: 'text', text: 'Internal ' },
-          { kind: 'strong', text: 'gRPC' },
-          { kind: 'text', text: ' service-to-service communication.' },
+          {
+            kind: 'text',
+            text: 'Built pages for company information, product and service presentation, and customer contact.',
+          },
         ],
         [
-          { kind: 'strong', text: 'Transaction Outbox pattern' },
-          { kind: 'text', text: ' for reliable event publishing post-DB commit.' },
-        ],
-        [
-          { kind: 'text', text: 'Event-driven architecture with ' },
-          { kind: 'strong', text: 'Apache Kafka' },
-          { kind: 'text', text: ' + Avro schema contracts.' },
+          {
+            kind: 'text',
+            text: 'Handled SEO-related configuration and the end-to-end workflow from frontend and backend development to deployment.',
+          },
         ],
       ],
-      tags: ['Spring Boot', 'NestJS', 'ASP.Net Core', 'Go', 'Kafka', 'gRPC', 'Redis', 'PostgreSQL'],
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'SEO', 'Deployment'],
     },
     {
-      title: 'Meta Chain API',
+      title: 'Learning Management System (LMS)',
       subtitle: [
-        { kind: 'text', text: 'UIT thesis — ' },
-        { kind: 'em', text: 'MetaChain - NFT Marketplace' },
+        { kind: 'text', text: 'Online learning platform · ' },
+        { kind: 'em', text: 'Frontend & UI/UX design' },
       ],
-      linkLabel: 'github.com/EdwardLTC/meta-chain-api',
-      linkHref: 'https://github.com/EdwardLTC/meta-chain-api',
+      linkLabel: 'lms-feweb-uit.vercel.app/vi',
+      linkHref: 'https://lms-feweb-uit.vercel.app/vi',
       bullets: [
         [
-          { kind: 'text', text: 'NestJS API for ' },
-          { kind: 'strong', text: 'collections, tokens, listings, and likes' },
-          { kind: 'text', text: ' with Prisma on PostgreSQL, Redis, JWT, and Swagger.' },
+          { kind: 'text', text: 'Designed the platform UI/UX in ' },
+          { kind: 'strong', text: 'Figma' },
+          { kind: 'text', text: ' and implemented the frontend using Next.js and TypeScript.' },
         ],
         [
-          { kind: 'strong', text: 'Chain listener' },
           {
             kind: 'text',
-            text: ' over WebSocket: replay missed logs, cursor-based ingestion, reconcile domain state with Factory / Marketplace events.',
+            text: 'Built interfaces for course browsing, lesson access, and online learning flows.',
           },
         ],
         [
-          { kind: 'strong', text: 'Hardhat' },
-          { kind: 'text', text: ' contracts (OpenZeppelin) and deployment scripts; ' },
-          { kind: 'strong', text: 'ethers v6' },
-          { kind: 'text', text: ' for RPC reads and wallet-signed listing flows.' },
+          {
+            kind: 'text',
+            text: 'Implemented assessment interfaces with answer selection, text input, and checkbox question formats.',
+          },
         ],
         [
-          { kind: 'text', text: 'Off-chain media via ' },
-          { kind: 'strong', text: 'IPFS (Pinata / NFT.Storage)' },
-          { kind: 'text', text: ' and optional ' },
-          { kind: 'strong', text: 'Azure Blob' },
-          { kind: 'text', text: ' storage.' },
+          {
+            kind: 'text',
+            text: 'Focused on reusable components, clear navigation, and a consistent learning experience.',
+          },
         ],
       ],
-      tags: [
-        'NestJS',
-        'Prisma',
-        'PostgreSQL',
-        'Redis',
-        'Solidity',
-        'Hardhat',
-        'OpenZeppelin',
-        'TypeScript',
-      ],
+      tags: ['Next.js', 'TypeScript', 'React', 'Figma', 'UI/UX', 'Tailwind CSS'],
     },
     {
-      title: 'DogDom API',
+      title: 'Viet Adventures — Travel App',
       subtitle: [
-        { kind: 'text', text: 'FPT Polytechnic thesis — ' },
-        { kind: 'em', text: 'Dogdom – Social Network for Pet Lovers' },
+        { kind: 'text', text: 'Tourism mobile application · ' },
+        { kind: 'em', text: 'Frontend Developer' },
       ],
-      linkLabel: 'github.com/EdwardLTC/dogdom-api',
-      linkHref: 'https://github.com/EdwardLTC/dogdom-api',
+      linkLabel: 'FPT Polytechnic project feature',
+      linkHref:
+        'https://caodang.fpt.edu.vn/tin-tuc-poly/sinh-vien-fpt-polytechnic-toa-sang-tai-cuoc-thi-khoi-nghiep-doi-moi-sang-tao-du-lich.html',
       bullets: [
         [
-          { kind: 'strong', text: 'Express + TypeScript' },
+          { kind: 'text', text: 'Developed mobile application interfaces using ' },
+          { kind: 'strong', text: 'React Native and JavaScript' },
+          { kind: 'text', text: '.' },
+        ],
+        [
           {
             kind: 'text',
-            text: ' REST API using routing-controllers, class-validator, and Swagger/OpenAPI docs.',
+            text: 'Implemented user rating and review features for travel destinations and experiences.',
           },
         ],
         [
-          { kind: 'strong', text: 'MongoDB + Mongoose' },
-          { kind: 'text', text: ' for domain models; ' },
-          { kind: 'strong', text: 'Redis / Redis OM' },
-          { kind: 'text', text: ' for cache-oriented data paths.' },
-        ],
-        [
-          { kind: 'strong', text: 'Socket.IO' },
-          { kind: 'text', text: ' for real-time features; ' },
-          { kind: 'strong', text: 'Elasticsearch' },
-          { kind: 'text', text: ' for search-heavy queries.' },
-        ],
-        [
-          { kind: 'strong', text: 'Azure' },
           {
             kind: 'text',
-            text: ' integrations (Blob, Notification Hubs, Communication Email) and ',
+            text: 'Integrated MoMo and other e-wallet payment options into the app payment flow.',
           },
-          { kind: 'strong', text: 'GitHub Actions → Azure Web Apps' },
-          { kind: 'text', text: ' CI/CD with PM2/Docker-style deploy flows.' },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'Implemented GPS-based features and a Vietnam map for tracking provinces visited by users.',
+          },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'Integrated text-to-speech features for audio travel information and contributed to interactive mini-games.',
+          },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'The project received first prize in a tourism innovation and startup competition for Ho Chi Minh City and the Mekong Delta region.',
+          },
         ],
       ],
-      tags: [
-        'TypeScript',
-        'Express',
-        'MongoDB',
-        'Mongoose',
-        'Redis',
-        'Socket.IO',
-        'Elasticsearch',
-        'Azure',
+      tags: ['React Native', 'JavaScript', 'GPS', 'Maps', 'MoMo', 'Text-to-Speech'],
+    },
+    {
+      title: 'Weather Forecast Analysis API',
+      subtitle: [
+        { kind: 'text', text: 'Weather data service · ' },
+        { kind: 'em', text: 'Backend Developer' },
       ],
+      linkLabel: 'Weather API documentation',
+      linkHref: 'https://weather-backend-0n6d.onrender.com/docs',
+      bullets: [
+        [
+          { kind: 'text', text: 'Built RESTful API endpoints using ' },
+          { kind: 'strong', text: 'Python and FastAPI' },
+          { kind: 'text', text: ' to serve current, historical, and forecast weather data.' },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'Integrated Open-Meteo weather and geocoding APIs to support location-based queries.',
+          },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'Processed weather data including temperature, humidity, and feels-like temperature for frontend consumption.',
+          },
+        ],
+        [
+          {
+            kind: 'text',
+            text: 'Published interactive API documentation with Swagger/OpenAPI and deployed the backend on Render.',
+          },
+        ],
+      ],
+      tags: ['Python', 'FastAPI', 'HTTPX', 'REST API', 'Open-Meteo', 'Swagger', 'Render'],
     },
   ],
 
   education: [
     {
       degree: 'B.Sc. Information Technology',
-      school: 'UIT — VNUHCM',
-      date: 'Sep 2024 — Jun 2026',
-      specialization: 'Specialization: Information Technology',
-      thesisTitle: 'MetaChain - NFT Marketplace',
+      school: 'University of Information Technology (UIT) — VNU-HCM',
+      date: '2025 — 2027',
+      specialization: 'Information Technology',
+      thesisTitle: 'LMS — Online Learning Management System',
     },
     {
       degree: 'Applied B.Sc. Software Engineering',
-      school: 'FPT Polytechnic',
-      date: 'Sep 2021 — Jan 2024',
-      specialization: 'Specialization: Mobile Programming',
-      thesisTitle: 'Dogdom – Social Network for Pet Lovers',
+      school: 'FPT Polytechnic College',
+      date: '2022 — 2024',
+      specialization: 'Mobile Application Development',
+      thesisTitle: 'Viet Adventures — Self-Guided Travel Mobile Application',
     },
   ],
 
   skillGroups: [
     {
-      label: 'Core',
+      label: 'Frontend & Mobile',
       highlight: true,
-      items: ['TypeScript', 'NestJS', 'Node.js', 'Express', 'PostgreSQL'],
-    },
-    {
-      label: 'Architecture',
-      highlight: false,
       items: [
-        'Microservices',
-        'Event-Driven',
-        'Saga Pattern',
-        'gRPC',
-        'Outbox Pattern',
-        'On-chain event ingestion',
+        'JavaScript',
+        'TypeScript',
+        'ReactJS',
+        'Next.js',
+        'React Native',
+        'HTML5',
+        'CSS3',
+        'Tailwind CSS',
       ],
     },
     {
-      label: 'Other Languages',
+      label: 'Backend & APIs',
       highlight: false,
-      items: ['Spring Boot', 'ASP.Net Core', 'Go', 'Solidity'],
+      items: ['Python', 'FastAPI', 'Node.js', 'RESTful APIs', 'Google Apps Script'],
     },
     {
-      label: 'Infra & Tools',
+      label: 'Database & Integrations',
       highlight: false,
       items: [
-        'AWS',
-        'Apache Kafka',
-        'Redis',
-        'Docker',
         'Prisma',
-        'Hardhat',
-        'MongoDB',
-        'Elasticsearch',
+        'Supabase',
+        'Firebase',
+        'Firestore',
+        'Google Sheets API',
+        'Cloudinary',
+        'MoMo Integration',
       ],
+    },
+    {
+      label: 'Tools & Workflow',
+      highlight: false,
+      items: ['Git', 'GitHub', 'Figma', 'Swagger/OpenAPI', 'Render', 'Vercel', 'n8n'],
     },
   ],
 
   languages: [
     { name: 'Vietnamese', level: 'Native', pct: 100 },
-    { name: 'English', level: 'Professional', pct: 50 },
+    { name: 'English', level: 'Technical Reading & Comprehension', pct: 50 },
   ],
 
   awards: [
-    'Academic Preparatory English Level 3 — Topnotch 2',
-    'Finalist — Startup Kite Competition',
-    'Top 3 Outstanding Projects Award at the "Jetpack Compose – Mobile Programming Trends" Workshop',
+    'First Prize — Tourism Innovation and Startup Competition for Ho Chi Minh City and the Mekong Delta region (Viet Adventures project)',
   ],
 
   footer: {
-    fullName: 'LÊ THÀNH CÔNG',
-    roleLabel: 'Backend Engineer',
-    locationDate: 'HỒ CHÍ MINH CITY · 2026',
+    fullName: 'NGUYỄN DUY TÂM',
+    roleLabel: 'Software Engineer',
+    locationDate: 'HO CHI MINH CITY · 2026',
   },
 };

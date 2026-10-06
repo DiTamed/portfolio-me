@@ -66,8 +66,7 @@ const Projects: React.FC = () => {
         'bg-blue-700/15 text-blue-950 border-blue-700/30 dark:bg-blue-700/20 dark:text-blue-300 dark:border-blue-700/20',
       Kafka:
         'bg-orange-500/15 text-orange-950 border-orange-500/30 dark:bg-orange-500/20 dark:text-orange-200 dark:border-orange-500/20',
-      gRPC:
-        'bg-violet-500/15 text-violet-950 border-violet-500/30 dark:bg-violet-500/20 dark:text-violet-200 dark:border-violet-500/20',
+      gRPC: 'bg-violet-500/15 text-violet-950 border-violet-500/30 dark:bg-violet-500/20 dark:text-violet-200 dark:border-violet-500/20',
       Prisma:
         'bg-slate-500/15 text-slate-900 border-slate-500/30 dark:bg-slate-500/20 dark:text-slate-200 dark:border-slate-500/20',
       Redis:
@@ -119,9 +118,9 @@ const Projects: React.FC = () => {
           </h2>
           <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Backend-focused projects spanning InsurTech operations, polyglot microservices, social
-            APIs with search and real-time WebSockets, Web3 marketplace backends with on-chain event
-            ingestion, and production cloud infrastructure.
+            Explore my projects in web/ app development, backend APIs, and data processing. Each project
+            reflects my hands-on experience in building practical applications, integrating
+            technologies, and solving real-world problems.
           </p>
         </motion.div>
 
@@ -160,17 +159,23 @@ const Projects: React.FC = () => {
                       </div>
 
                       {project.role && (
-                        <p className="mt-2 text-sm font-semibold text-blue-800 dark:text-blue-200">{project.role}</p>
+                        <p className="mt-2 text-sm font-semibold text-blue-800 dark:text-blue-200">
+                          {project.role}
+                        </p>
                       )}
 
-                      <p className="mt-4 text-sm leading-6 text-muted-foreground">{project.description}</p>
+                      <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                        {project.description}
+                      </p>
 
                       {project.problem && (
                         <div className="mt-6 border-l-2 border-emerald-400/40 pl-4">
                           <p className="text-xs font-semibold uppercase tracking-wider text-emerald-800 dark:text-emerald-300">
                             Backend Challenge
                           </p>
-                          <p className="mt-2 text-sm leading-6 text-muted-foreground">{project.problem}</p>
+                          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                            {project.problem}
+                          </p>
                         </div>
                       )}
                     </div>
@@ -203,7 +208,9 @@ const Projects: React.FC = () => {
                           <p className="text-xs font-semibold uppercase tracking-wider text-blue-800 dark:text-blue-200">
                             Result
                           </p>
-                          <p className="mt-2 text-sm leading-6 text-muted-foreground">{project.impact}</p>
+                          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                            {project.impact}
+                          </p>
                         </div>
                       )}
                     </div>
@@ -217,7 +224,10 @@ const Projects: React.FC = () => {
                         </p>
                         <ul className="mt-3 space-y-2">
                           {project.highlights.map((highlight, index) => (
-                            <li key={index} className="flex gap-2 text-sm leading-6 text-muted-foreground">
+                            <li
+                              key={index}
+                              className="flex gap-2 text-sm leading-6 text-muted-foreground"
+                            >
                               <Sparkles
                                 size={15}
                                 className="mt-1 shrink-0 text-emerald-700 dark:text-emerald-300"
@@ -282,7 +292,7 @@ const Projects: React.FC = () => {
 
         <div className="mt-16 text-center">
           <Button
-            href="https://github.com/EdwardLTC"
+            href="https://github.com/DiTamed"
             label="View More Projects"
             icon={<Github size={18} />}
             variant="secondary"

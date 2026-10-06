@@ -35,7 +35,7 @@ const Logo: React.FC = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        {'{'}
+        {'['}
       </motion.span>
 
       {/* Initials */}
@@ -55,7 +55,7 @@ const Logo: React.FC = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.2 }}
       >
-        {'}'}
+        {']'}
       </motion.span>
     </motion.div>
   );

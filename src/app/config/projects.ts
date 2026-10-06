@@ -1,133 +1,158 @@
-/*
- * Copyright 2025 Praveen Kumar
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import { Project } from '../types/types';
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'FISSolution',
+    title: 'Duong Nguyen Huynh - Company Website',
     description:
-      'InsurTech and FinTech product suite built with a modular monolith backend that is prepared for future microservice separation.',
-    role: 'Junior Lead Backend Engineer',
+      'A company website built with Next.js, TypeScript, Prisma, and Supabase to introduce the business, present products and services, support customer inquiries, and improve online visibility through SEO.',
+    role: 'Full-stack Developer',
     problem:
-      'Insurance and finance workflows require stable provider integrations, order and contract lifecycle management, partner tracking, payouts, and compliance-ready audit history.',
+      'A business website needs to communicate company information, showcase products and services, provide convenient contact channels, and establish a solid foundation for search engine visibility.',
     highlights: [
-      'Integrated insurance provider APIs and payment gateway flows across multiple product lines.',
-      'Designed and implemented end-to-end order and contract lifecycle management.',
-      'Standardized API contracts across insurance and financial service providers for interoperability.',
-      'Built affiliate and partner integrations for tracking, orders, and disbursement items.',
-      'Automated insurance creation workflows, reducing manual operations by 40%.',
-      'Built payments and payouts flows including withdrawals, bank/payment info, and reconciliation reporting.',
-      'Delivered admin, corporate, and provider portal backend APIs as separate services.',
-      'Built audit logging and change history for compliance workflows.',
-      'Built a multi-tenant SaaS platform enabling partners to lease and operate isolated instances of the system.',
-      'Designed and implemented an affiliate tracking & commission system for publishers and partner campaigns.',
-      'Introduced dynamic encrypted base on timestamp for public API requests to prevent replay attacks and ensure request integrity.',
+      'Developed the frontend using Next.js and TypeScript.',
+      'Implemented backend functionality and application logic for the website.',
+      'Integrated Prisma for database access and data management.',
+      'Used Supabase to support database-related functionality.',
+      'Built pages and user flows for company information, product presentation, and customer contact.',
+      'Worked on SEO configuration and website structure to improve search engine discoverability.',
+      'Handled the end-to-end development workflow, from frontend and backend implementation to deployment.',
     ],
     impact:
-      'Production backend experience across provider integrations, payment operations, auditability, and AWS infrastructure.',
-    tags: ['NestJS', 'Prisma', 'PostgreSQL', 'AWS EC2', 'RDS', 'S3', 'TypeScript'],
-    liveLink: 'https://fiss.com.vn',
-    type: 'Lead Backend',
+      'Delivered a deployed company website that combines business presentation, product information, customer contact, and SEO-focused implementation.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Prisma',
+      'Supabase',
+      'Full-stack Development',
+      'SEO',
+      'Deployment',
+    ],
+    liveLink: 'https://duongnguyenhuynh.com/',
+    githubLink: '',
+    type: 'Full-stack Web Development',
   },
   {
     id: 2,
-    title: 'E-Commerce Microservice System',
+    title: 'Learning Management System (LMS)',
     description:
-      'Polyglot e-commerce backend designed around microservices, distributed transactions, and event-driven communication.',
-    role: 'Backend Engineer',
+      'An online learning management system that provides a digital learning environment where users can access courses, study lessons, and complete interactive assessments throughout their learning journey.',
+    role: 'Frontend Developer & UI/UX Designer',
     problem:
-      'Order processing in a distributed commerce system needs reliable service communication, consistent transaction flow, and dependable event publishing after database commits.',
+      'Online learning platforms need an intuitive interface for navigating courses, accessing lessons, and completing assessments with different question formats while maintaining a consistent learning experience.',
     highlights: [
-      'Designed a polyglot microservice system spanning 4 languages and frameworks.',
-      'Implemented distributed transactions with the Saga pattern using choreography for order processing.',
-      'Used internal gRPC communication for service-to-service calls.',
-      'Applied the Transaction Outbox pattern for reliable event publishing after database commits.',
-      'Built event-driven flows with Apache Kafka and Avro schema contracts.',
+      'Designed the user interface and user experience for the platform using Figma.',
+      'Developed the frontend application using Next.js and TypeScript.',
+      'Built user-facing interfaces for browsing courses and accessing online lessons.',
+      'Implemented learning interfaces that organize course content and lesson navigation.',
+      'Developed assessment interfaces supporting multiple question formats, including single-choice answers, text input, and checkboxes.',
+      'Built interactive answer-selection and assessment components to support the learning process.',
+      'Focused on responsive layouts, reusable UI components, and a consistent user experience across the platform.',
     ],
     impact:
-      'Demonstrates my strongest backend architecture skills: microservices, Saga, gRPC, Outbox, Kafka, schema contracts, Redis, and PostgreSQL.',
-    tags: ['Spring Boot', 'NestJS', 'ASP.NET Core', 'Go', 'Kafka', 'gRPC', 'Redis', 'PostgreSQL'],
-    githubLink: 'https://github.com/EdwardLTC/e-commerce-microservice',
-    liveLink: '',
-    type: 'Backend',
+      'Delivered the frontend experience for an online learning platform, combining Figma-based UI/UX design with course, lesson, and interactive assessment interfaces.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'React',
+      'Figma',
+      'UI/UX Design',
+      'Tailwind CSS',
+      'Learning Management System',
+    ],
+    liveLink: 'https://lms-feweb-uit.vercel.app/vi',
+    githubLink: '',
+    type: 'Frontend & UI/UX Design',
   },
   {
     id: 3,
-    title: 'Meta Chain API',
+    title: 'Weather Forecast Analysis API',
     description:
-      'NestJS backend for the MetaChain NFT marketplace thesis: collections, tokens, listings, and likes with Prisma on PostgreSQL, Redis, JWT auth, Swagger, and off-chain media via IPFS/Pinata and optional Azure Blob.',
-    role: 'Backend & Smart Contract Engineer (UIT thesis)',
+      'A weather backend API that retrieves current weather conditions, historical weather data, and forecasts using geographic coordinates and external weather services.',
+    role: 'Backend Developer',
     problem:
-      'Marketplace backends must stay consistent with on-chain state: index Factory and Marketplace events over WebSocket, reconcile listings after wallet-signed txs, handle metadata and media uploads, and expose reliable REST APIs to the Flutter client.',
+      'Weather applications need to transform external weather data into consistent API responses that frontend applications can consume efficiently.',
     highlights: [
-      'Implemented core modules (collections, tokens, listings, likes) with REST + Swagger and JWT auth.',
-      'Built a chain listener that follows logs over WebSocket, replays missed events, and persists cursors for idempotent ingestion into Postgres.',
-      'Integrated Hardhat-deployed Factory and Marketplace contracts (local / Sepolia) with ethers v6 for reads and transaction payloads.',
-      'Wired optional IPFS (Pinata / NFT.Storage) and Azure Blob storage for media flows alongside Prisma migrations.',
-      'Used Redis for caching and operational data paths aligned with the NestJS modules.',
+      'Built asynchronous backend endpoints using Python and FastAPI.',
+      'Integrated the Open-Meteo weather and geocoding APIs.',
+      'Implemented city-based search by converting location names into geographic coordinates.',
+      'Developed endpoints for current weather, historical data, and weather forecasts.',
+      'Processed weather attributes such as temperature, humidity, and feels-like temperature.',
+      'Structured API responses for integration with a frontend dashboard.',
     ],
     impact:
-      'End-to-end thesis stack combining NestJS service design, Prisma data modeling, EVM contract integration, and event-driven on-chain/off-chain synchronization.',
-    tags: [
-      'NestJS',
-      'TypeScript',
-      'Prisma',
-      'PostgreSQL',
-      'Redis',
-      'Solidity',
-      'Openzeppelin',
-      'Hardhat',
-      'Ethers',
-      'Azure',
-    ],
+      'Provides a reusable weather API for displaying current conditions, historical observations, and upcoming forecasts.',
+    tags: ['Python', 'FastAPI', 'HTTPX', 'Open-Meteo API', 'REST API', 'Async Programming'],
     liveLink: '',
-    type: 'Backend & Smart Contract',
-    githubLink: 'https://github.com/EdwardLTC/meta-chain-api',
+    githubLink: 'https://github.com/DiTamed/weather-backend',
+    type: 'Backend & API Integration',
   },
   {
     id: 4,
-    title: 'DogDom API',
+    title: 'Nha Khoa Vạn Thành Website',
     description:
-      'TypeScript Express backend for the DogDom pet social network (FPT Polytechnic thesis): REST APIs with routing-controllers, MongoDB via Mongoose, Redis caching with Redis OM, Socket.IO for real-time features, and Elasticsearch for search — deployed on Azure with CI/CD.',
-    role: 'Backend Engineer (FPT thesis)',
+      'A dental clinic website project focused on service presentation, appointment registration, customer inquiries, and integrations that support day-to-day business operations.',
+    role: 'Web Developer',
     problem:
-      'A social product needs fast feeds and discovery, reliable auth, real-time presence and notifications, and cloud-native deployment without sacrificing validation, observability, or operational ergonomics.',
+      'A multi-branch dental clinic needs a clear online presence where customers can explore services, find branch information, and submit appointment or consultation requests.',
     highlights: [
-      'Built REST APIs with routing-controllers, class-validator, and OpenAPI/Swagger documentation.',
-      'Modeled domain data in MongoDB with Mongoose and used Redis (including Redis OM) for cache-oriented paths.',
-      'Implemented real-time flows with Socket.IO (including admin tooling) alongside cron jobs and background-style processing.',
-      'Integrated Elasticsearch for search-heavy endpoints and Azure services (Blob, Notification Hubs, Communication Email).',
-      'Shipped with GitHub Actions CI/CD toward Azure Web Apps, PM2 process management, and Docker-based workflows.',
+      'Customized website layouts and content using the Haravan platform and Liquid templates.',
+      'Worked on service presentation, branch information, and responsive website components.',
+      'Integrated appointment and consultation forms with Google Sheets through Google Apps Script.',
+      'Connected workflow automation using n8n and Zalo OA for appointment notifications.',
+      'Worked on website SEO configuration, redirects, metadata, and performance improvements.',
+      'Improved customer contact flows with call and Zalo entry points.',
     ],
     impact:
-      'Full-stack-adjacent backend ownership for a production-shaped social API: document store, cache, search, WebSockets, and Azure operations.',
+      'Connects the clinic website with appointment collection and notification workflows, helping streamline customer inquiries across multiple branches.',
     tags: [
-      'TypeScript',
-      'Express',
-      'MongoDB',
-      'Mongoose',
-      'Redis',
-      'Socket.IO',
-      'Elasticsearch',
-      'Azure',
+      'Haravan',
+      'Liquid',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Google Sheets API',
+      'Google Apps Script',
+      'n8n',
+      'Zalo OA',
+      'SEO',
     ],
-    liveLink: 'http://dogdom.eastus.cloudapp.azure.com/api-docs/',
-    type: 'Backend',
-    githubLink: 'https://github.com/EdwardLTC/dogdom-api',
+    liveLink: 'https://nhakhoavanthanh.com.vn/',
+    githubLink: '',
+    type: 'Website & Business Integration',
+  },
+  {
+    id: 5,
+    title: 'Viet Adventures',
+    description:
+      'A self-guided travel mobile application built with React Native and JavaScript, designed to help users explore destinations across Vietnam through location-based features, interactive activities, and travel progress tracking.',
+    role: 'Frontend Developer',
+    problem: '',
+    highlights: [
+      'Developed mobile application interfaces and frontend features using React Native and JavaScript.',
+      'Implemented user review and rating functionality for travel experiences and destinations.',
+      'Integrated MoMo payment functionality into the application.',
+      'Implemented GPS-based location features to support location-aware experiences.',
+      'Built a Vietnam map feature for users to track provinces they have visited.',
+      'Worked on text-to-speech functionality to support travel information playback.',
+      'Contributed to mini-game features that make the travel experience more interactive.',
+    ],
+    impact:
+      'Combines mobile development, location-based features, user reviews, and payment integration in a tourism application. The project won first prize in the Tourism Innovation and Startup Competition for Ho Chi Minh City and the Mekong Delta region.',
+    tags: [
+      'React Native',
+      'JavaScript',
+      'Mobile Development',
+      'GPS',
+      'MoMo Payment',
+      'Text-to-Speech',
+      'Maps',
+      'User Reviews',
+    ],
+    liveLink:
+      'https://caodang.fpt.edu.vn/tin-tuc-poly/sinh-vien-fpt-polytechnic-toa-sang-tai-cuoc-thi-khoi-nghiep-doi-moi-sang-tao-du-lich.html',
+    githubLink: 'https://github.com/wander-Vietnam/wander_vietnam.git',
+    type: 'Mobile Application',
   },
 ];
