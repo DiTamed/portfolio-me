@@ -105,7 +105,7 @@ export const resumeContent: ResumeContent = {
     },
     {
       company: 'Theta Business Solution Co., Ltd.',
-      dateRange: 'Aug 2025 — Nov 2025',
+      dateRange: 'June 2025 — Nov 2025',
       role: 'Front-end Developer',
       summary:
         'Delivered frontend solutions for client projects, including interactive web applications and custom Zalo Mini Apps.',
